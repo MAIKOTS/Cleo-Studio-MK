@@ -1,0 +1,6 @@
+[
+  ["0001:", "004E:", "0002:", "004D:", "014B:"],
+  ["wait", "jump", "end_thread", "if", "then"],
+  ["$PLAYER_CHAR", "$PLAYER_ACTOR", "1@", "2@", "DEL"],
+  ["ABC", "←", "→", "ESPAÇO", "TAB", "ENTER"]
+]
