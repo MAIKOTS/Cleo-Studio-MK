@@ -1,0 +1,7 @@
+[
+  ["{$CLEO .csi}", "{$CLEO .s}"],
+  ["if", "then", "else", "endif"],
+  ["while", "endwhile", "repeat", "until"],
+  ["0001: wait 0 ms", "004E: end_thread"],
+  ["←", "→", "ESPAÇO", "TAB", "ENTER"]
+]
