@@ -1,0 +1,9 @@
+[
+  "0001: wait 0 ms",
+  "004E: end_thread",
+  "0002: jump @",
+  "004D: jump_if_false @",
+  "0247: load_model",
+  "0248: is_model_available",
+  "014B:"
+]
