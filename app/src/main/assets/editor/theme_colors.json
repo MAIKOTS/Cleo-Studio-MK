@@ -1,0 +1,30 @@
+{
+  "temas": [
+    {
+      "id": "monokai",
+      "nome": "Monokai Pro",
+      "background": "#272822",
+      "texto_padrao": "#F8F8F2",
+      "linha_selecionada": "#3E3D32",
+      "opcodes": "#F92672",
+      "strings": "#E6DB74",
+      "numeros": "#AE81FF",
+      "comentarios": "#75715E",
+      "labels": "#A6E22E",
+      "variaveis": "#FD971F"
+    },
+    {
+      "id": "dracula",
+      "nome": "Dracula Dark",
+      "background": "#282A36",
+      "texto_padrao": "#F8F8F2",
+      "linha_selecionada": "#44475A",
+      "opcodes": "#FF79C6",
+      "strings": "#F1FA8C",
+      "numeros": "#BD93F9",
+      "comentarios": "#6272A4",
+      "labels": "#50FA7B",
+      "variaveis": "#8BE9FD"
+    }
+  ]
+}
