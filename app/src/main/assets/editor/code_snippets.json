@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "Estrutura Base Script (CSA)",
+    "atalho": "csa_base",
+    "descricao": "Cria o esqueleto inicial para um script .csa de looping infinito.",
+    "conteudo": "{$CLEO .csa}\n\n:main\nwait 0\nif\n    0256: player $PLAYER_CHAR defined\nthen\n    // Seu código aqui\nend\njump @main"
+  },
+  {
+    "titulo": "Estrutura Base Script Único (CSI)",
+    "atalho": "csi_base",
+    "descricao": "Cria um script executado apenas uma vez ao acionar pelo menu/toque.",
+    "conteudo": "{$CLEO .csi}\n\nwait 0\n3A13: aml_show_toast \"Script CSI Executado!\" 0\n0A93: terminate_this_custom_script"
+  },
+  {
+    "titulo": "Função SCM Personalizada",
+    "atalho": "scm_func",
+    "descricao": "Função reutilizável com argumento de entrada e retorno.",
+    "conteudo": ":minha_funcao\n// 0@ = Primeiro argumento passado\n000A: 0@ += 10\n0AB2: ret 1 0@"
+  },
+  {
+    "titulo": "Verificar Toque na Tela Android",
+    "atalho": "touch_check",
+    "descricao": "Estrutura condicional para verificar toques na tela.",
+    "conteudo": "if\n    0CB5: is_any_finger_onscreen\nthen\n    3A13: aml_show_toast \"Tela Tocada\" 0\nend"
+  }
+]
