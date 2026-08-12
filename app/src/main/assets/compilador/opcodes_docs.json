@@ -1,0 +1,62 @@
+{
+  "0001": {
+    "nome": "WAIT",
+    "sintaxe": "wait %1d% ms",
+    "descricao": "Pausa a execução do script pelo tempo especificado em milissegundos."
+  },
+  "0002": {
+    "nome": "GOTO",
+    "sintaxe": "jump @label",
+    "descricao": "Desvia a execução do script incondicionalmente para a label informada."
+  },
+  "0AB1": {
+    "nome": "CALL_SCM_FUNC",
+    "sintaxe": "call_scm_func @label num_params [args]",
+    "descricao": "Chama uma função SCM personalizada declarada em uma label, passando parâmetros."
+  },
+  "0AB2": {
+    "nome": "RET",
+    "sintaxe": "ret num_params [retornos]",
+    "descricao": "Retorna de uma função SCM criada com o opcode 0AB1."
+  },
+  "0AC8": {
+    "nome": "ALLOCATE_MEMORY_SIZE",
+    "sintaxe": "allocate_memory_size %1d% store_to %2d%",
+    "descricao": "Aloca dinamicamente um bloco de memória do tamanho especificado em bytes."
+  },
+  "0AC9": {
+    "nome": "FREE_ALLOCATED_MEMORY",
+    "sintaxe": "free_allocated_memory %1d%",
+    "descricao": "Libera um bloco de memória alocado anteriormente via opcode 0AC8."
+  },
+  "0CB5": {
+    "nome": "IS_ANY_FINGER_ONSCREEN",
+    "sintaxe": "is_any_finger_onscreen",
+    "descricao": "Verifica se há pelo menos um dedo tocando na tela do dispositivo Android."
+  },
+  "0CB6": {
+    "nome": "IS_FINGER_IN_AREA",
+    "sintaxe": "is_finger_in_area %1d% %2d% radius %3d%",
+    "descricao": "Verifica se há algum toque ativo na área X Y e raio especificados."
+  },
+  "3A00": {
+    "nome": "AML_HAS_MOD_LOADED",
+    "sintaxe": "aml_has_mod_loaded \"id_do_mod\"",
+    "descricao": "Verifica se um determinado mod nativo do AML está carregado no jogo."
+  },
+  "3A11": {
+    "nome": "AML_VIBRATE",
+    "sintaxe": "aml_vibrate %1d% ms",
+    "descricao": "Aciona o motor de vibração do dispositivo pelo tempo em milissegundos informado."
+  },
+  "3A13": {
+    "nome": "AML_SHOW_TOAST",
+    "sintaxe": "aml_show_toast \"Texto\" tempo_longo",
+    "descricao": "Exibe uma mensagem informativa no estilo Toast nativo do Android."
+  },
+  "3A14": {
+    "nome": "AML_GET_BATTERY_PERCENTAGE",
+    "sintaxe": "%1d% = aml_get_battery_percentage",
+    "descricao": "Obtém o nível percentual atual da bateria do aparelho (retorna float)."
+  }
+}
