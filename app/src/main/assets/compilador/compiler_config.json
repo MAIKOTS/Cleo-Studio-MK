@@ -1,0 +1,19 @@
+{
+  "palavras_ignoradas": [
+    "WAIT",
+    "MS",
+    "=",
+    "ACTOR",
+    "STRUCT",
+    "AT_PLAYER_LOCATION"
+  ],
+  "opcodes_formatados_null_terminated": [
+    "0ACA",
+    "0ACB",
+    "0AD3",
+    "0AD4"
+  ],
+  "opcodes_int32_obrigatorio": [
+    "0001"
+  ]
+}
