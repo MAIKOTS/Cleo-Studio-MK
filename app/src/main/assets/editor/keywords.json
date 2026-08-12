@@ -1,0 +1,31 @@
+{
+  "estruturas_controle": [
+    "IF",
+    "THEN",
+    "ELSE",
+    "END",
+    "WHILE",
+    "REPEAT", "UNTIL",
+    "FOR",
+    "SWITCH",
+    "CASE"
+  ],
+  "diretivas": [
+    "{$CLEO}",
+    "{$NOP}",
+    "{$USE}"
+  ],
+  "tipos_dados": [
+    "INT",
+    "FLOAT",
+    "STRING",
+    "HANDLE"
+  ],
+  "palavras_reservadas": [
+    "NOT",
+    "AND",
+    "OR",
+    "TRUE",
+    "FALSE"
+  ]
+}
