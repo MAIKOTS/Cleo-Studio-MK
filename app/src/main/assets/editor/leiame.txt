@@ -1,0 +1,30 @@
+======================================================================
+                     CLEO STUDIO MK - PASTA EDITOR                    
+======================================================================
+
+Esta pasta armazena as configurações de interface, temas visuais, 
+modelos de código e dados de suporte ao Editor de Código (CodeEditorView).
+
+ESTRUTURA DOS ARQUIVOS:
+
+1. keywords.json
+   - Lista organizada de palavras-chave da linguagem CLEO.
+   - Utilizado pelo motor de realce de sintaxe (Syntax Highlighting) 
+     e pelo sistema de autocompletar texto do editor.
+   - Categorias: estruturas_controle, diretivas, tipos_dados, palavras_reservadas.
+
+2. code_snippets.json
+   - Modelos e trechos de código pré-prontos (Snippets).
+   - Utilizado pelo painel de atalhos do teclado para inserir estruturas
+     completas (.csa, .csi, funções SCM, verificações de touch) com 1 clique.
+
+3. theme_colors.json
+   - Esquemas de cores do editor de código.
+   - Define a cor do fundo, texto padrão, realce de linha e cores específicas
+     para opcodes, strings, números, comentários, labels e variáveis.
+   - Suporta múltiplos temas (ex: Monokai Pro, Dracula Dark).
+
+======================================================================
+DICA: Para adicionar novos atalhos de código para o usuário, basta inserir
+um novo objeto no array do arquivo `code_snippets.json`.
+======================================================================
