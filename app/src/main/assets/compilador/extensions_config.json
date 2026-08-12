@@ -1,0 +1,36 @@
+{
+  "extensoes": {
+    "IniFiles": {
+      "descricao": "Permite ler e escrever arquivos de configuração .ini",
+      "opcodes": [
+        "0AF0",
+        "0AF1",
+        "0AF2",
+        "0AF3",
+        "0AF4",
+        "0AF5"
+      ]
+    },
+    "IntOperations": {
+      "descricao": "Operações binárias e lógicas de baixo nível para inteiros",
+      "opcodes": [
+        "0B10",
+        "0B11",
+        "0B12",
+        "0B13",
+        "0B14",
+        "0B15"
+      ]
+    },
+    "CLEO5_Memory": {
+      "descricao": "Manipulação direta e alocação de memória RAM",
+      "opcodes": [
+        "2400",
+        "2401",
+        "2402",
+        "2403",
+        "2407"
+      ]
+    }
+  }
+}
