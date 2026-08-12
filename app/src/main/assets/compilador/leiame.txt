@@ -1,0 +1,35 @@
+======================================================================
+                  CLEO STUDIO MK - PASTA COMPILADOR                   
+======================================================================
+
+Esta pasta contém as tabelas de dados, mapeamentos de opcodes e regras
+de compilação utilizadas pelo motor de compilação Java (CleoCompiler.java).
+
+ESTRUTURA DOS ARQUIVOS:
+
+1. opcodes.json
+   - Mapeia o nome/comando do opcode para o seu valor Hexadecimal.
+   - Contém todos os opcodes padrões do GTA San Andreas Android, 
+     opcodes CLEO 4, CLEO 5, matemática avançada e extensões AML.
+   - Exemplo: "WAIT": "0001", "AML_SHOW_TOAST": "3A13"
+
+2. compiler_config.json
+   - Define regras específicas de tratamento durante o parse de código:
+     * palavras_ignoradas: Termos cosméticos como "THEN", "AND", "OR".
+     * opcodes_formatados_null_terminated: Opcodes que usam strings diretas 
+       terminadas em byte nulo (0x00) em vez de prefixos (ex: 0ACA, 3A13).
+     * opcodes_int32_obrigatorio: Opcodes que exigem que números inteiros 
+       sejam gravados com 4 bytes obrigatoriamente (ex: WAIT 0001).
+
+3. opcodes_docs.json
+   - Contém a sintaxe, nome formatado e descrição explicativa de cada opcode.
+   - Utilizado para exibir diálogos e pop-ups de documentação rápida.
+
+4. extensions_config.json
+   - Mapeia bibliotecas extras suportadas pela CLEO Android (ex: IniFiles, 
+     IntOperations, CLEO5 Memory) e seus respectivos blocos de opcodes.
+
+======================================================================
+ATENÇÃO: Não altere a chave principal dos arquivos JSON sem atualizar
+as classes de leitura Java (OpcodeTable.java e CompilerConfig.java).
+======================================================================
